@@ -13,6 +13,60 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
+
+
+<!-- STARTING MAIN CONTENT -->
+		<!-- user info -->
+		<!-- top left -->
+		<div id="topLeft">
+			<img src="" id="studentImage" alt="student profile picture" class="rounded-circle">
+			<h4 id="studentName"></h4>
+			<span id="studentID"></span>
+		</div>
+
+		<!-- student progress -->
+		<!-- top right -->
+		<div id="topRight">
+			<div class="timeDiv">
+				<span id="displayTime"></span>
+			</div>
+			<h5>My Progress</h5>
+				<div class="progress">
+					<!-- the width generated goes below -->
+  					<div id="studentProgress" class="progress-bar bg-info" style="" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  					</div>
+				</div>
+				<div class="text-center">
+					<button class="btn">Resume</button>
+				</div>
+		</div>
+
+		<!-- bottom left -->
+		<div id="bottomLeft">
+			<div id="active">
+			<a href="#" onclick="courses()">courses</a>
+			<a href="#" onclick="activity()">activity</a>
+			<a href="#" onclick="account()">account</a>
+			</div>
+		</div>
+
+		<!-- bottom right -->
+		<div id="bottomRight">
+			<h4 id="title"></h4>
+			<ul id="list"></ul>
+
+		</div>
+		<!-- ENDING MAIN CONTENT -->
+
+
+		<!-- STARTING SIDE MENU -->
+		<div id="menu">
+			<i class="fas fa-bars" onclick="menu()"></i>
+
+			<i class="fas fa-home"><span id="home">Home</span></i>
+			<i class="fas fa-sign-out-alt"><span id="logOut">Log Out</span></i>
+		</div>
+		<!-- ENDING SIDE MENU -->
 		
 
 

@@ -1,0 +1,230 @@
+/*
+[0]GENERAL
+[1]MENU
+[2]MAIN CONTENT
+[3]MEDIA QUERIES
+*/
+
+
+/*[0]GENERAL*/
+body{
+	font-size: 14px;
+	color:#fff;
+	background-color: #3F4C56;
+}
+
+a{
+	text-transform: uppercase;
+	color:#fff;
+}
+
+a:hover{
+	color:#fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 15px #fff;
+}
+
+
+/*[1]MENU*/
+#menu{
+	background-color: #1A6E88;
+	padding-top:5%;
+	padding: 1%;
+	text-align: left;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 20%;
+}
+
+#menu i{
+	font-size: 25px;
+}
+
+.fas{
+	padding: 5%;
+	display: block;
+}
+#menu span{
+	font-size: 20px;
+}
+.fa-bars{
+	padding-top: 15%;
+}
+
+.toggleMenu{
+	display: none;
+}
+
+
+/*[2]MAIN CONTENT*/
+#topLeft,
+#topRight,
+#bottomLeft,
+#bottomRight{
+	box-shadow: -5px 10px 15px #2A3D4E;
+	margin: 0;
+	width: 35%;
+	background-color: #1A6E88;
+	padding: 3%;
+}
+
+#studentImage{
+	width: 200px;
+	height: auto;
+	padding:0;
+}
+
+#topLeft{
+	max-height: 300px;
+	position: fixed;
+	top: 5%;
+	left:4%;
+}
+#topRight{
+	max-height:300px;
+	position: fixed;
+	top:5%;
+	left: 42%;
+}
+
+.progress{
+	height: 40px;
+}
+
+#bottomLeft{
+	position: fixed;
+	top: 350px;
+	left:4%;
+	max-height:200px;
+}
+
+#bottomRight{
+	position: fixed;
+	top:300px;
+	padding: 1%;
+	left: 42%;
+}
+
+
+#studentProgress{
+	padding: 2%;
+}
+#timeDiv{
+	text-align: right;
+}
+.btn{
+	color:#fff;
+	margin-top: 3%;
+	background-color: #1A6E88;
+	border-radius: 5px;
+	border:2px solid #00BCD4; 
+}
+.btn:hover{
+	background-color:#00BCD4;
+}
+
+/*[3]MEDIA QUERIES*/
+
+@media only screen and (max-width: 890px){
+	#bottomRight{
+		padding: 1%;
+		top:45%;
+	}
+	h4{
+		font-size: 24px;
+	}
+	h5{
+		font-size: 22px;
+	}
+	h6{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 780px){
+	#bottomRight{
+		top:45%;
+		padding: 3%;
+	}
+	h4{
+		font-size: 18px;
+	}
+	h5{
+		font-size: 16px;
+	}
+	h6{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 625px){
+	h4{
+		font-size: 20px;
+	}
+	h5{
+		font-size: 18px;
+	}
+	h6{
+		font-size: 16px;
+	}
+	#bottomRight{
+		top:40%;
+	}
+	#studentImage{
+		width:150px;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 570px;){
+	#studentImage{
+		width:110px;
+		padding: 0;
+	}
+}
+@media only screen and (max-width:350px){
+	#studentImage{
+		width:80px;
+		padding:0;
+	}
+	h4{
+		font-size: 16px;
+	}
+	h5{
+		font-size: 14px;
+	}
+	h6{
+		font-size: 12px;
+	}
+
+	#menu i{
+		font-size: 16px;
+	}
+	#menu span{
+		font-size: 12px;
+	}
+	.progress{
+		height:20px;
+	}
+	.btn{
+		padding: 0;
+		margin: 0;
+		margin-top: 5px;
+		height: 22px;
+		border-radius: 5px;
+		font-size: 12px;
+	}
+
+	a{
+		font-size: 14px;
+	}
+	#bottomRight{
+		padding: 1%;
+	}
+	#bottomRight,
+	#topRight{
+		width:40%;
+	}
+}
+
