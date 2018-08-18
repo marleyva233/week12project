@@ -140,13 +140,12 @@ function account() {
 }
 
 //[5]menu
-// toggle
-// onclick menu span display none
-
+//when the button is clicked the words log out and home will appear
+//also the menu will expand from 10 to 20% 
 function menu(){
-    document.getElementById("home").classList.toggle("toggleMenu");
-    document.getElementById("logOut").classList.toggle("toggleMenu");
-    document.getElementById("menu").classList.toggle("toggleMenuSize");
+    document.getElementById("menu").classList.toggle("menuExpand");
+    document.getElementById("home").classList.toggle("whiteText");
+    document.getElementById("logOut").classList.toggle("whiteText");
 }
 
 courses();
