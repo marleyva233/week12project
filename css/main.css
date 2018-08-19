@@ -5,7 +5,6 @@
 [3]MEDIA QUERIES
 */
 
-
 /*[0]GENERAL*/
 * {
 	transition: 0.5s ease;
@@ -27,7 +26,6 @@ a:hover{
 	text-decoration: none;
 	text-shadow: 1px 1px 15px #fff;
 }
-
 
 /*[1]MENU*/
 #menu{
@@ -54,7 +52,7 @@ a:hover{
 	display: block;
 }
 #menu span{
-	color:#fff;
+	color:transparent;
 	padding: 5%;
 	padding-left: 20%;
 	font-size: 20px;
@@ -94,13 +92,13 @@ a:hover{
 	max-height: 300px;
 	position: fixed;
 	top: 5%;
-	left:4%;
+	left:10%;
 }
 #topRight{
 	max-height:300px;
 	position: fixed;
 	top:5%;
-	left: 42%;
+	left: 50%;
 }
 
 .progress{
@@ -110,15 +108,15 @@ a:hover{
 #bottomLeft{
 	position: fixed;
 	top: 350px;
-	left:4%;
+	left:10%;
 	max-height:200px;
 }
 
 #bottomRight{
 	position: fixed;
-	top:300px;
+	top:270px;
 	padding: 1%;
-	left: 42%;
+	left: 50%;
 }
 
 
@@ -140,6 +138,11 @@ a:hover{
 }
 
 /*[3]MEDIA QUERIES*/
+@media only screen and (max-width: 1250px){
+	#bottomRight{
+		top:45%;
+	}
+}
 @media only screen and (max-width: 1150px){
 	#menu{
 		right:-13%;
@@ -148,32 +151,22 @@ a:hover{
 @media only screen and (max-width: 890px){
 	#bottomRight{
 		padding: 1%;
-		top:45%;
+		top:40%;
 	}
-	h4{
-		font-size: 24px;
-	}
-	h5{
-		font-size: 22px;
-	}
-	h6{
-		font-size: 20px;
-	}
-}
-
-@media only screen and (max-width: 780px){
-	#bottomRight{
-		top:45%;
-		padding: 3%;
-	}
-	h4{
+		h4{
 		font-size: 18px;
 	}
 	h5{
 		font-size: 16px;
 	}
 	h6{
-		font-size: 14px;
+		font-size: 14px;}
+}
+
+@media only screen and (max-width: 780px){
+	#bottomRight{
+		top:38%;
+		padding: 3%;
 	}
 }
 @media only screen and (max-width: 750px){
@@ -196,6 +189,9 @@ a:hover{
 	}
 	#menu span{
 		font-size: 16px;
+	}
+	.bottomLeft{
+		top:320px;
 	}
 }
 @media only screen and (max-width: 650px){
@@ -223,33 +219,52 @@ a:hover{
 		width:150px;
 		padding: 0;
 	}
+	#bottomLeft{
+		top:300px;
+	}
 }
 @media only screen and (max-width: 580px){
 	#menu span{
 		font-size: 12px;
 	}
 }
-@media only screen and (max-width: 570px;){
-	#studentImage{
-		width:110px;
-		padding: 0;
-	}
-	#bottomRight{
-		padding: 1%;
-	}
-}
+/*major styling change to fix 550 and smaller*/
 @media only screen and (max-width: 550px){
-	#menu{
-		width:25%;
-		right:-14%;
+	#topLeft,
+	#bottomLeft{
+	left:2%;
+	}
+	#topRight,
+	#bottomRight{
+		left:40%;
+		width:250px;
 	}
 	#bottomRight{
-		padding: 5px;
+		top:30%;
 	}
-	h6{
-		font-size: 14px;
+	#topRight{
+		text-align: center;
+	}
+	.progress{
+		margin:0 auto;
+		height: 20px;
+		width:50%;
+	}
+	.btn{
+		border:none;
+		height:20px;
+	}
+	.btn:hover{
+		background-color:initial;
 	}
 }
+@media only screen and (max-width: 530px){
+	#menu{
+		right:-15%;
+		width:25%;
+	}
+}
+/*major change in styling for mobile devices*/
 @media only screen and (max-width: 450px){
 	#studentImage{
 		display: none;
@@ -264,23 +279,31 @@ a:hover{
 		left:5%;
 		margin:0 auto;
 	}
+	/*student details*/
 	#topLeft{
 		text-align: center;
-		top:1%;
-		padding: 1%;
+		top:3%;
+		padding:2%;
 		height:70px;
 	}
+	/*menu/selector*/
 	#bottomLeft{
-		top:85px;
+		text-align: center;
+		top:245px;
 		height: 50px;
 	}
+	/*progress and dashboard*/
 	#topRight{
 		padding-bottom: 0;
-		top:140px;
+		top:85px;
 		height:150px;
 	}
+	/*subject details*/
 	#bottomRight{
+		margin: 0 auto;
+		text-align: left;
 		padding: 5px;
+		padding-left: 10px;
 		height:230px;
 		top:305px;
 	}
@@ -306,6 +329,18 @@ a:hover{
 	.progress{
 		height: 20px;
 	}
+	#menu{
+		width:25%;
+		right:-11%;
+	}
+	#menu span{
+		color:transparent;
+	}
 }
+@media only screen and (max-width: 415px){
+	#menu{
+		right:-13%;
+		width:30%;
 
-
+	}
+}

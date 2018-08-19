@@ -5,8 +5,6 @@
 // [4]bottomRight
 // [5]menu
 
-
-
 // [0]provided data
     var user = {
         name: "Maribel Leyva Ramirez",
@@ -47,8 +45,6 @@
             subject: "Computer Science"
         }];
 
-
-
 // [1]topLeft
 
 //an object constructor that takes an user image, image, name and id
@@ -61,10 +57,6 @@ function userDetails(user, image, name, id){
 
 //using the object constructor to create an user
 userDetails(user,document.getElementById("studentImage"), document.getElementById("studentName"), document.getElementById("studentID"));
-
-
-
-
 
 // [2]topRight
 //content for topRight div
@@ -114,9 +106,7 @@ progress.style.width=user.progress*100+"%";
 
 studentProgress(user, document.getElementById("studentProgress"),(document.getElementById("studentProgress")));
 
-
 // [3]bottomLeft
-
 
 //[4]bottomRight
 function currentTab(array, title, list, string){
