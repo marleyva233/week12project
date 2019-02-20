@@ -4,7 +4,6 @@
 [2]MAIN CONTENT
 [3]MEDIA QUERIES
 */
-
 /*[0]GENERAL*/
 * {
 	transition: 0.5s ease;
@@ -15,18 +14,15 @@ body{
 	color:#fff;
 	background-color: #3F4C56;
 }
-
 a{
 	text-transform: uppercase;
 	color:#fff;
 }
-
 a:hover{
 	color:#fff;
 	text-decoration: none;
 	text-shadow: 1px 1px 15px #fff;
 }
-
 /*[1]MENU*/
 #menu{
 	color:#fff;
@@ -42,11 +38,9 @@ a:hover{
 	height: 100%;
 	width: 20%;
 }
-
 #menu i{
 	font-size: 25px;
 }
-
 .fas{
 	padding: 5%;
 	display: block;
@@ -68,8 +62,6 @@ a:hover{
 .whiteText{
 	color:#fff !important;
 }
-
-
 /*[2]MAIN CONTENT*/
 #topLeft,
 #topRight,
@@ -81,13 +73,11 @@ a:hover{
 	background-color: #1A6E88;
 	padding: 3%;
 }
-
 #studentImage{
 	width: 200px;
 	height: auto;
 	padding:0;
 }
-
 #topLeft{
 	max-height: 300px;
 	position: fixed;
@@ -100,26 +90,21 @@ a:hover{
 	top:5%;
 	left: 50%;
 }
-
 .progress{
 	height: 40px;
 }
-
 #bottomLeft{
 	position: fixed;
 	top: 350px;
 	left:10%;
 	max-height:200px;
 }
-
 #bottomRight{
 	position: fixed;
 	top:270px;
 	padding: 1%;
 	left: 50%;
 }
-
-
 #studentProgress{
 	padding: 2%;
 }
@@ -136,7 +121,6 @@ a:hover{
 .btn:hover{
 	background-color:#00BCD4;
 }
-
 /*[3]MEDIA QUERIES*/
 @media only screen and (max-width: 1250px){
 	#bottomRight{
@@ -341,6 +325,5 @@ a:hover{
 	#menu{
 		right:-13%;
 		width:30%;
-
 	}
 }
