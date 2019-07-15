@@ -9,22 +9,22 @@
 	transition: 0.5s ease;
 	box-sizing: border-box;
 }
-body{
+body {
 	font-size: 14px;
 	color:#fff;
 	background-color: #3F4C56;
 }
-a{
+a {
 	text-transform: uppercase;
 	color:#fff;
 }
-a:hover{
+a:hover {
 	color:#fff;
 	text-decoration: none;
 	text-shadow: 1px 1px 15px #fff;
 }
 /*[1]MENU*/
-#menu{
+#menu {
 	color:#fff;
 	transition: 0.5s ease;
 	box-sizing: border-box;
@@ -38,225 +38,226 @@ a:hover{
 	height: 100%;
 	width: 20%;
 }
-#menu i{
+#menu i {
 	font-size: 25px;
 }
-.fas{
+.fas {
 	padding: 5%;
 	display: block;
 }
-#menu span{
+#menu span {
 	color:transparent;
 	padding: 5%;
 	padding-left: 20%;
 	font-size: 20px;
 }
-.fa-bars{
+.fa-bars {
 	padding-top: 15%;
 }
-.menuExpand{
+.menuExpand {
 	position: fixed;
 	top:0;
 	right:0!important;
 }
-.whiteText{
+.whiteText {
 	color:#fff !important;
 }
 /*[2]MAIN CONTENT*/
 #topLeft,
 #topRight,
 #bottomLeft,
-#bottomRight{
+#bottomRight {
 	box-shadow: -5px 10px 15px #2A3D4E;
 	margin: 0;
 	width: 35%;
 	background-color: #1A6E88;
 	padding: 3%;
 }
-#studentImage{
+#studentImage {
 	width: 200px;
 	height: auto;
 	padding:0;
 }
-#topLeft{
+#topLeft {
 	max-height: 300px;
 	position: fixed;
 	top: 5%;
 	left:10%;
 }
-#topRight{
+#topRight {
 	max-height:300px;
 	position: fixed;
 	top:5%;
 	left: 50%;
 }
-.progress{
+.progress {
 	height: 40px;
 }
-#bottomLeft{
+#bottomLeft {
 	position: fixed;
 	top: 350px;
 	left:10%;
 	max-height:200px;
 }
-#bottomRight{
+#bottomRight {
 	position: fixed;
 	top:270px;
 	padding: 1%;
 	left: 50%;
 }
-#studentProgress{
+#studentProgress {
 	padding: 2%;
 }
-#timeDiv{
+#timeDiv {
 	text-align: right;
 }
-.btn{
+.btn {
 	color:#fff;
 	margin-top: 3%;
 	background-color: #1A6E88;
 	border-radius: 5px;
 	border:2px solid #00BCD4; 
 }
-.btn:hover{
+.btn:hover {
 	background-color:#00BCD4;
 }
 /*[3]MEDIA QUERIES*/
-@media only screen and (max-width: 1250px){
-	#bottomRight{
+@media only screen and (max-width: 1250px) {
+	#bottomRight {
 		top:45%;
 	}
 }
-@media only screen and (max-width: 1150px){
-	#menu{
+@media only screen and (max-width: 1150px) {
+	#menu {
 		right:-13%;
 	}
 }
-@media only screen and (max-width: 890px){
-	#bottomRight{
+@media only screen and (max-width: 890px) {
+	#bottomRight {
 		padding: 1%;
 		top:40%;
 	}
-		h4{
+		h4 {
 		font-size: 18px;
 	}
-	h5{
+	h5 {
 		font-size: 16px;
 	}
-	h6{
-		font-size: 14px;}
+	h6 {
+		font-size: 14px;
+	}
 }
 
-@media only screen and (max-width: 780px){
-	#bottomRight{
+@media only screen and (max-width: 780px) {
+	#bottomRight {
 		top:38%;
 		padding: 3%;
 	}
 }
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 750px) {
 	#menu span {
 		font-size: 18px;
 	}
 }
-@media only screen and (max-width: 700px){
-	#menu{
+@media only screen and (max-width: 700px) {
+	#menu {
 		right:-12%;
 	}
-	#menu span{
+	#menu span {
 		font-size: 16px;
 	}
 }
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 680px) {
 	#topRight,
-	#bottomRight{
+	#bottomRight {
 		width: 300px;
 	}
-	#menu span{
+	#menu span {
 		font-size: 16px;
 	}
-	.bottomLeft{
+	.bottomLeft {
 		top:320px;
 	}
 }
-@media only screen and (max-width: 650px){
-	#menu span{
+@media only screen and (max-width: 650px) {
+	#menu span {
 		font-size: 14px;
 	}
 }
-@media only screen and (max-width: 625px){
-	#menu span{
+@media only screen and (max-width: 625px) {
+	#menu span {
 		font-size: 14px;
 	}
-	h4{
+	h4 {
 		font-size: 20px;
 	}
-	h5{
+	h5 {
 		font-size: 18px;
 	}
-	h6{
+	h6 {
 		font-size: 16px;
 	}
-	#bottomRight{
+	#bottomRight {
 		top:40%;
 	}
-	#studentImage{
+	#studentImage {
 		width:150px;
 		padding: 0;
 	}
-	#bottomLeft{
+	#bottomLeft {
 		top:300px;
 	}
 }
-@media only screen and (max-width: 580px){
-	#menu span{
+@media only screen and (max-width: 580px) {
+	#menu span {
 		font-size: 12px;
 	}
 }
 /*major styling change to fix 550 and smaller*/
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
 	#topLeft,
-	#bottomLeft{
+	#bottomLeft {
 	left:2%;
 	}
 	#topRight,
-	#bottomRight{
+	#bottomRight {
 		left:40%;
 		width:250px;
 	}
-	#bottomRight{
+	#bottomRight {
 		top:30%;
 	}
-	#topRight{
+	#topRight {
 		text-align: center;
 	}
-	.progress{
+	.progress {
 		margin:0 auto;
 		height: 20px;
 		width:50%;
 	}
-	.btn{
+	.btn {
 		border:none;
 		height:20px;
 	}
-	.btn:hover{
+	.btn:hover {
 		background-color:initial;
 	}
 }
-@media only screen and (max-width: 530px){
-	#menu{
+@media only screen and (max-width: 530px) {
+	#menu {
 		right:-15%;
 		width:25%;
 	}
 }
 /*major change in styling for mobile devices*/
-@media only screen and (max-width: 450px){
-	#studentImage{
+@media only screen and (max-width: 450px) {
+	#studentImage {
 		display: none;
 	}
 	#topLeft,
 	#topRight,
 	#bottomLeft,
-	#bottomRight{
+	#bottomRight {
 		display: block;
 		width:350px;
 		position: fixed;
@@ -264,26 +265,26 @@ a:hover{
 		margin:0 auto;
 	}
 	/*student details*/
-	#topLeft{
+	#topLeft {
 		text-align: center;
 		top:3%;
 		padding:2%;
 		height:70px;
 	}
 	/*menu/selector*/
-	#bottomLeft{
+	#bottomLeft {
 		text-align: center;
 		top:245px;
 		height: 50px;
 	}
 	/*progress and dashboard*/
-	#topRight{
+	#topRight {
 		padding-bottom: 0;
 		top:85px;
 		height:150px;
 	}
 	/*subject details*/
-	#bottomRight{
+	#bottomRight {
 		margin: 0 auto;
 		text-align: left;
 		padding: 5px;
@@ -291,38 +292,38 @@ a:hover{
 		height:230px;
 		top:305px;
 	}
-	#menu{
+	#menu {
 		background-color: #3F4C56;
 		height:130px;
 	}
-	h4{
+	h4 {
 		font-size: 14px;
 	}
-	h5{
+	h5 {
 		font-size: 12px;
 	}
-	h6{
+	h6 {
 		font-size: 12px;
 		font-weight: normal;
 	}
-	.btn{
+	.btn {
 		border:none;
 		font-size: 12px;
 		height: 16px;
 	}
-	.progress{
+	.progress {
 		height: 20px;
 	}
-	#menu{
+	#menu {
 		width:25%;
 		right:-11%;
 	}
-	#menu span{
+	#menu span {
 		color:transparent;
 	}
 }
-@media only screen and (max-width: 415px){
-	#menu{
+@media only screen and (max-width: 415px) {
+	#menu {
 		right:-13%;
 		width:30%;
 	}
